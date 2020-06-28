@@ -5,9 +5,22 @@
     <description>Steve Nicolson</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Jun 2020 20:22:51 +0100</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2020 20:22:51 +0100</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2020 20:28:52 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2020 20:28:52 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Six Bullets</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/six-bullets/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/six-bullets/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
     
       <item>
         <title>River</title>
@@ -49,6 +62,45 @@
       </item>
     
       <item>
+        <title>Regicides</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/regicides/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/regicides/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
+        <title>Mary Poppins</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/mary-poppins/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/mary-poppins/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
+        <title>Homeland</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/made-in-romania/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/made-in-romania/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
         <title>Johnny English</title>
         <description>
 </description>
@@ -68,6 +120,19 @@
         <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000//video/2019/11/09/homeland/</link>
         <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/homeland/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
+        <title>Death Train</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/death-train/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/death-train/</guid>
         
         
         <category>video</category>
