@@ -4,7 +4,7 @@ layout: default
 modal-id: 1
 date: 2019-11-09
 thumbnail: river.png
-video: https://youtu.be/7a7JFXX6LBQ
+video: https://youtube.com/embed/7a7JFXX6LBQ
 thumbnail: river.png
 alt: River
 category: video

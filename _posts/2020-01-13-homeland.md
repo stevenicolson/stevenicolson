@@ -4,7 +4,7 @@ layout: default
 modal-id: 4
 date: 2019-11-09
 thumbnail: homeland.png
-video: https://youtu.be/rSETNcCn4m8
+video: https://youtube.com/embed/rSETNcCn4m8
 thumbnail: homeland.png
 alt: River
 category: video
