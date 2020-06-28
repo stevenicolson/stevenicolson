@@ -4,9 +4,9 @@ subtitle: Starring Rowan Atkinson
 layout: default
 modal-id: 2
 date: 2019-11-09
-img: johnnyenglish.png
-video: https://www.youtube.com/embed/ZZQVD5YEMh8
-thumbnail: /img/02-jonny-english.png
+thumbnail: 02-jonny-english.png
+video: https://youtu.be/R0GDgjKG_pE
+thumbnail: 02-jonny-english.png
 alt: River
 category: video
 description: 

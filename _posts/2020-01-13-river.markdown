@@ -4,9 +4,9 @@ subtitle: Starring x
 layout: default
 modal-id: 1
 date: 2019-11-09
-thumbnail: img/01-river.png
+thumbnail: 01-river.png
 video: https://youtu.be/7a7JFXX6LBQ
-thumbnail: img/01-river.png
+thumbnail: 01-river.png
 alt: River
 category: video
 description: 
