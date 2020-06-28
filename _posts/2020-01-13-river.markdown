@@ -1,6 +1,5 @@
 ---
 title: River
-subtitle: Starring x
 layout: default
 modal-id: 1
 date: 2019-11-09

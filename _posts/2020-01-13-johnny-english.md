@@ -1,6 +1,5 @@
 ---
 title: Johnny English
-subtitle: Starring Rowan Atkinson
 layout: default
 modal-id: 2
 date: 2019-11-09
