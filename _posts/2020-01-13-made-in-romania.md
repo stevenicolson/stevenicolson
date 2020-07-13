@@ -8,5 +8,5 @@ video: https://youtube.com/embed/ffUL6MA2knM
 thumbnail: romania.png
 alt: Jennifer Tilly
 category: video
-description: 
+description: From Made in Romania
 ---

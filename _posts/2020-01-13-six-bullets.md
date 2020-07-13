@@ -1,5 +1,5 @@
 ---
-title: Six Bullets
+title: Scene with Jean-Claude Van Damme
 layout: default
 modal-id: 4
 date: 2019-11-09
@@ -8,7 +8,7 @@ video: https://youtube.com/embed/sGdO45BvxHk
 thumbnail: sixbullets.png
 alt: River
 category: video
-description: 
+description: From Six Bullets
 
 ---
 
