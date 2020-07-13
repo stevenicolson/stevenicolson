@@ -283,7 +283,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-image: url('//img/header-bg.jpg');
-    background-position: left top;
+    background-position: center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
