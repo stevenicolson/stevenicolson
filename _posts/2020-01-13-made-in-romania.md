@@ -1,12 +1,12 @@
 ---
-title: Scene with Jennifer Tilly
+title: Scene with Carrie Fisher
 layout: default
-modal-id: 4
+modal-id: 5
 date: 2019-11-09
-thumbnail: romania.png
-video: https://youtube.com/embed/ffUL6MA2knM
-thumbnail: romania.png
-alt: Jennifer Tilly
+thumbnail: carrie.png
+video: https://youtube.com/embed/ESPC9ON3oGk
+thumbnail: carrie.png
+alt: Carrie Fisher
 category: video
-description: From Made in Romania
+description: Scene with Carrie Fisher
 ---

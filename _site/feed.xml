@@ -5,9 +5,22 @@
     <description>Steve Nicolson</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Aug 2020 15:31:50 +0100</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2020 15:31:50 +0100</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2020 17:25:01 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2020 17:25:01 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Scene with Jennifer Tilly</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000//video/2019/11/09/white-lightning/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/white-lightning/</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
     
       <item>
         <title>Scene with Jean-Claude Van Damme</title>
@@ -88,7 +101,7 @@
       </item>
     
       <item>
-        <title>Scene with Jennifer Tilly</title>
+        <title>Scene with Carrie Fisher</title>
         <description>
 </description>
         <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
@@ -120,19 +133,6 @@
         <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
         <link>http://localhost:4000//video/2019/11/09/homeland/</link>
         <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/homeland/</guid>
-        
-        
-        <category>video</category>
-        
-      </item>
-    
-      <item>
-        <title>Death Train</title>
-        <description>
-</description>
-        <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000//video/2019/11/09/death-train/</link>
-        <guid isPermaLink="true">http://localhost:4000//video/2019/11/09/death-train/</guid>
         
         
         <category>video</category>
