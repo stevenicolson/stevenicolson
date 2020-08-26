@@ -349,7 +349,7 @@
 
      <!-- Portfolio Modals -->
  
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -364,7 +364,7 @@
                             <h2>Scene with Jennifer Tilly</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal11" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/ffUL6MA2knM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/ffUL6MA2knM&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="Jennifer Tilly"> -->
                             <p>From Made in Romania</p>
                             <ul class="list-inline item-details">
@@ -384,12 +384,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal11').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -404,7 +409,7 @@
                             <h2>Scene with Jean-Claude Van Damme</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal10" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/sGdO45BvxHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/sGdO45BvxHk&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p>From Six Bullets</p>
                             <ul class="list-inline item-details">
@@ -424,12 +429,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal10').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -444,7 +454,7 @@
                             <h2>River</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal9" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/7a7JFXX6LBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/7a7JFXX6LBQ&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -464,12 +474,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal9').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -484,7 +499,7 @@
                             <h2>River 2</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal8" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/V7aTkxif_fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/V7aTkxif_fg&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -504,12 +519,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal8').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -524,7 +544,7 @@
                             <h2>Regicides</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal7" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/n4DxppPSsgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/n4DxppPSsgw&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -544,12 +564,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal7').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -564,7 +589,7 @@
                             <h2>Mary Poppins</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal6" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/L8K03NBFr_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/L8K03NBFr_0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -584,12 +609,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal6').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -604,7 +634,7 @@
                             <h2>Scene with Carrie Fisher</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal5" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/ESPC9ON3oGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/ESPC9ON3oGk&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="Carrie Fisher"> -->
                             <p>Scene with Carrie Fisher</p>
                             <ul class="list-inline item-details">
@@ -624,12 +654,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal5').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -644,7 +679,7 @@
                             <h2>Scene with Liam Neeson (K19)</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal4" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/PhkLsncT33g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/PhkLsncT33g&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -664,12 +699,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal4').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -684,7 +724,7 @@
                             <h2>Scene with Rowan Atkinson</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal3" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/R0GDgjKG_pE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/R0GDgjKG_pE&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p>From Johnny English</p>
                             <ul class="list-inline item-details">
@@ -704,12 +744,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal3').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -724,7 +769,7 @@
                             <h2>Homeland</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal2" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/rSETNcCn4m8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/rSETNcCn4m8&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -744,12 +789,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal2').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -764,7 +814,7 @@
                             <h2>Death Train</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal1" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/NR1u4-P-BPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/NR1u4-P-BPg&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="River"> -->
                             <p></p>
                             <ul class="list-inline item-details">
@@ -784,12 +834,17 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal1').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal30" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
                 <div class="lr">
@@ -804,7 +859,7 @@
                             <h2>Showreel</h2>
                             <h3></h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal30" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/evh5Rzcho58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="popupVid" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="https://youtube.com/embed/evh5Rzcho58&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/" class="img-responsive img-centered" alt="Showreel"> -->
                             <p>Showreel</p>
                             <ul class="list-inline item-details">
@@ -824,9 +879,14 @@
         </div>
     </div>
     <script>
-      function killVideo {
-        document.getElementById('Modal30').src = null;
-      }
+      function toggleVideo(state) {
+            // if state == 'hide', hide. Else: show video
+            var div = document.getElementById("portfolio-modal");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            div.style.display = state == 'hide' ? 'none' : '';
+            func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+            iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+        }
   </script>
 
 
