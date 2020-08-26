@@ -1,5 +1,5 @@
  <!-- Portfolio Modals -->
- {% for post in site.posts | sort: post.mod %}
+ {% for post in site.posts | sort: post.modal-id %}
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -11,11 +11,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                        <div class="modal-body" id="Modal{{modal-id}}">
                             <h2>{{ post.title }}</h2>
                             <h3>{{ post.subtitle }}</h3>
                             <hr class="star-primary">
-                            <iframe  style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="{{ post.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe style="display:block; width:100vw; min-height:56%; max-width: 100%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="{{ post.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
