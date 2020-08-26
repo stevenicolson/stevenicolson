@@ -2,7 +2,7 @@
  {% for post in site.posts | sort: post.mod %}
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal" onclick="killVideo()">
+            <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
@@ -15,7 +15,7 @@
                             <h2>{{ post.title }}</h2>
                             <h3>{{ post.subtitle }}</h3>
                             <hr class="star-primary">
-                            <iframe  id="Modal{{post.modal-id}}" style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="{{ post.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  style="display:block; width:100vw; min-height:56vw; max-width: 100%; max-height: 56%; border:none; margin:0 0 1em 0; padding:0; overflow:hidden; z-index:999999;" src="{{ post.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
@@ -34,9 +34,4 @@
             </div>
         </div>
     </div>
-    <script>
-      function killVideo {
-        document.getElementById('Modal{{post.modal-id}}').src = null;
-      }
-  </script>
 {% endfor %}
