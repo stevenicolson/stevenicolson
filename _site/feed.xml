@@ -5,30 +5,20 @@
     <description>Steve Nicolson</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 Aug 2020 13:36:32 +0100</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2020 13:36:32 +0100</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2020 13:42:06 +0100</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2020 13:42:06 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Showreel</title>
         <description>
-&lt;hr /&gt;
-&lt;p&gt;title: Showreel
-layout: post
-modal-id: 1
-date: 2020-08-26
-thumbnail: showreel.png
-video: https://youtube.com/embed/evh5Rzcho58
-thumbnail: showreel.png
-alt: Showreel
-category: video
-description: Showreel
-—&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Aug 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000//2020/08/26/showreel/</link>
-        <guid isPermaLink="true">http://localhost:4000//2020/08/26/showreel/</guid>
+        <link>http://localhost:4000//video/2020/08/26/showreel/</link>
+        <guid isPermaLink="true">http://localhost:4000//video/2020/08/26/showreel/</guid>
         
+        
+        <category>video</category>
         
       </item>
     

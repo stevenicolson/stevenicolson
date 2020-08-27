@@ -5,7 +5,6 @@ modal-id: 10
 date: 2019-11-09
 thumbnail: river.png
 video: https://youtube.com/embed/7a7JFXX6LBQ
-thumbnail: river.png
 alt: River
 category: video
 description: 
