@@ -1,32 +1,17 @@
-<!-- Portfolio Grid Section -->
-    <section id="videos" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Scenes</h2>
+ <!-- Portfolio Modals -->
+<div class="container" style="margin-top:2em; margin-bottom: 2em;">
+    <h2>Scenes</h2>
+    <div class="row">
+        {% for post in site.posts | sort: post.modal-id %}
+         <a href="{{ post.url | absolute_url }}" class="portfolio-link" style="text-decoration: none;">
+            <div class="col-sm-6 portfolio-item" style="margin-top: 1em;">
+                <img src="../img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                <div class="portfolio-caption">
+                    <h4>{{ post.title }}</h4>
+                    <p class="text-muted"></p>
                 </div>
             </div>
-            <div class="row">
-            {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item" style="margin-top: 1em;">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                    <!--     <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-            </div>
-            <!-- Set List Button -->
-            <!-- <div class="col-lg-12 text-center" style="margin-top:4em;">
-                <a href="./setlist" class="page-scroll btn btn-xl">View Set Lists</a>
-            </div> -->
-        </div>
-    </section>
+        </a>
+        {% endfor %}
+    </div>
+</div>

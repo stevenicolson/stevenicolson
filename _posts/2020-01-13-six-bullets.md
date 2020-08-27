@@ -1,6 +1,6 @@
 ---
 title: Scene with Jean-Claude Van Damme
-layout: default
+layout: post
 modal-id: 10
 date: 2019-11-09
 thumbnail: sixbullets.png

@@ -1,6 +1,6 @@
 ---
 title: Mary Poppins
-layout: default
+layout: post
 modal-id: 6
 date: 2019-11-09
 thumbnail: marypoppins.png

@@ -1,6 +1,6 @@
 ---
 title: Scene with Jennifer Tilly
-layout: default
+layout: post
 modal-id: 11
 date: 2019-11-09
 thumbnail: romania.png

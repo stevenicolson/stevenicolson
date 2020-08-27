@@ -1,6 +1,6 @@
 ---
 title: Scene with Rowan Atkinson
-layout: default
+layout: post
 modal-id: 3
 date: 2019-11-09
 thumbnail: jonnyenglish.png

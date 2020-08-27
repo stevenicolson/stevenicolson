@@ -1,6 +1,6 @@
 ---
 title: Scene with Carrie Fisher
-layout: default
+layout: post
 modal-id: 5
 date: 2019-11-09
 thumbnail: carrie.png

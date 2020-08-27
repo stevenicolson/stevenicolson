@@ -1,6 +1,6 @@
 ---
 title: Regicides
-layout: default
+layout: post
 modal-id: 7
 date: 2019-11-09
 thumbnail: regicides.png
